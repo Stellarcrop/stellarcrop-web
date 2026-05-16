@@ -41,9 +41,9 @@ import {
   Wallet,
   Warehouse,
 } from "lucide-react";
-import { stellarConfig, toDateTime, type Receipt } from "@stellarcrop/stellar";
+import { stellarConfig, toDateTime, type Receipt } from "./lib/stellar";
 
-const contractId = import.meta.env.NEXT_PUBLIC_RECEIPT_CONTRACT_ID ?? "not-configured";
+const contractId = import.meta.env.VITE_RECEIPT_CONTRACT_ID ?? "not-configured";
 
 const demoReceipts: Receipt[] = [
   {
